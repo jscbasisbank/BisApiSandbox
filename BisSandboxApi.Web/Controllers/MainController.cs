@@ -45,7 +45,7 @@ public class MainController : Controller
     {
         if (!ModelState.IsValid)
         {
-            return new ApiResponse() { ErrorCode = 1, ErrorMsg = "შეავსეთ ყველა სავალდებულო ველი" };
+            return new ApiResponse() { ErrorCode = -1, ErrorMsg = "Fill all required fields correctly" };
         }
 
         return _service.ChangePassword(request);
@@ -71,7 +71,7 @@ public class MainController : Controller
     {
         if (!ModelState.IsValid)
         {
-            return new ApiResponse() { ErrorCode = 1, ErrorMsg = "შეავსეთ ყველა სავალდებულო ველი" };
+            return new ApiResponse() { ErrorCode = -1, ErrorMsg = "Fill all required fields correctly" };
         }
 
         return _service.SendOtp(request);
@@ -117,7 +117,7 @@ public class MainController : Controller
     {
         if (!ModelState.IsValid)
         {
-            return new ApiResponse() { ErrorCode = 1, ErrorMsg = "შეავსეთ ყველა სავალდებულო ველი" };
+            return new ApiResponse() { ErrorCode = -1, ErrorMsg = "Fill all required fields correctly" };
         }
 
         return _service.UploadPackageGel(request);
@@ -163,7 +163,7 @@ public class MainController : Controller
     {
         if (!ModelState.IsValid)
         {
-            return new ApiResponse() { ErrorCode = 1, ErrorMsg = "შეავსეთ ყველა სავალდებულო ველი" };
+            return new ApiResponse() { ErrorCode = -1, ErrorMsg = "Fill all required fields correctly" };
         }
 
         return _service.UploadPackageSalary(request);
@@ -209,7 +209,7 @@ public class MainController : Controller
     {
         if (!ModelState.IsValid)
         {
-            return new ApiResponse() { ErrorCode = 1, ErrorMsg = "შეავსეთ ყველა სავალდებულო ველი" };
+            return new ApiResponse() { ErrorCode = -1, ErrorMsg = "Fill all required fields correctly" };
         }
 
         return _service.UploadPackageTreasury(request);
@@ -289,7 +289,7 @@ public class MainController : Controller
     {
         if (!ModelState.IsValid)
         {
-            return new ApiResponse() { ErrorCode = 1, ErrorMsg = "შეავსეთ ყველა სავალდებულო ველი" };
+            return new ApiResponse() { ErrorCode = -1, ErrorMsg = "Fill all required fields correctly" };
         }
 
         return _service.UploadSingleTransfersBatch(request);
@@ -319,7 +319,7 @@ public class MainController : Controller
     {
         if (!ModelState.IsValid)
         {
-            return new ApiResponse() { ErrorCode = 1, ErrorMsg = "შეავსეთ ყველა სავალდებულო ველი" };
+            return new ApiResponse() { ErrorCode = -1, ErrorMsg = "Fill all required fields correctly" };
         }
 
         return _service.GetReport(request);

@@ -59,7 +59,7 @@ public class AuthController : Controller
     {
         if (!ModelState.IsValid)
         {
-            return new ApiResponse() { ErrorCode = 1, ErrorMsg = "შეავსეთ ყველა სავალდებულო ველი" };
+            return new ApiResponse() { ErrorCode = -1, ErrorMsg = "Fill all required fields correctly" };
         }
 
         return _service.LogIn(request);
@@ -85,7 +85,7 @@ public class AuthController : Controller
     {
         if (!ModelState.IsValid)
         {
-            return new ApiResponse() { ErrorCode = 1, ErrorMsg = "შეავსეთ ყველა სავალდებულო ველი" };
+            return new ApiResponse() { ErrorCode = -1, ErrorMsg = "Fill all required fields correctly" };
         }
 
         return _service.LogOut(request);

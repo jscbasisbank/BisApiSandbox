@@ -24,7 +24,7 @@ public class AuthService : IAuthService
             response.ErrorMsg = "Invalid username or password";
         }
 
-        if (IsCorrectLanguage(request.Lang))
+        if (!IsCorrectLanguage(request.Lang))
         {
             response.ErrorCode = -1;
             response.ErrorMsg = "Language not supported. Use 'GE' or 'EN'";
