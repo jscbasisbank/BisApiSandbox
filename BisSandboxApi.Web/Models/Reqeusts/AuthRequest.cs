@@ -1,15 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Threading.Tasks;
 
-namespace AuthApi.Web.NewFolder
-{
-    public class AuthRequest
-    {
-        public string LoginName { get; set; }
-        public string Password { get; set; }
-        public string Lang { get; set; }
-    }
+namespace BisSandboxApi.Web.Models.Requests;
 
+public class AuthRequest
+{
+    [DataMember]
+    [Required]
+    public string LoginName { get; set; }
+
+    [DataMember]
+    [Required]
+    public string Password { get; set; }
+
+    [DataMember]
+    public string Lang { get; set; }
 }

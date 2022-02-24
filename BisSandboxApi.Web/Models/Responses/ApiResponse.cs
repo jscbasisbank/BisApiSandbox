@@ -1,14 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace AuthApi.Web.NewFolder
+namespace BisSandboxApi.Web.Models.Responses;
+
+public class ApiResponse
 {
-    public class ApiResponse
+    public int ErrorCode { get; set; }
+    public string ErrorMsg { get; set; }
+    public object Data { get; set; }
+
+    public override string ToString()
     {
-        public int ErrorCode { get; set; }
-        public string ErrorMsg { get; set; }
-        public object Data { get; set; }
+        return JsonSerializer.Serialize(this);
     }
 }

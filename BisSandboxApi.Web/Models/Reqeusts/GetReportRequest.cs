@@ -1,18 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Threading.Tasks;
 
-namespace AuthApi.Web.NewFolder
-{
-    public class GetReportRequest
-    {
-        public string TicketId { get; set; }
-        public string Account { get; set; }
-        public string Ccy { get; set; }
-        public DateTime? StartDate { get; set; }
-        public DateTime? EndDate { get; set; }
-        public int PageNo { get; set; }
-    }
+namespace BisSandboxApi.Web.Models.Requests;
 
+public class GetReportRequest : BaseRequest
+{
+    [DataMember]
+    [Required]
+    public string Account { get; set; }
+
+    [DataMember]
+    [Required]
+    [StringLength(3)]
+    public string Ccy { get; set; }
+
+    [DataMember]
+    public DateTime? StartDate { get; set; }
+
+    [DataMember]
+    public DateTime? EndDate { get; set; }
+
+    [DataMember]
+    public int PageNo { get; set; }
 }
