@@ -1,20 +1,15 @@
-﻿using System;
-using Swashbuckle.AspNetCore.Filters;
+﻿namespace BisSandboxApi.Web.Models;
 
-namespace BisSandboxApi.Web.Models
+public class UserExample : IExamplesProvider<User>
 {
-    public class UserExample : IExamplesProvider<User>
+    public User GetExamples()
     {
-        public User GetExamples()
+        return new User
         {
-            return new User
-            {
-                LoginName = "BisUser",
-                Password = "Password",
-                ClientNo = 2354,
-                TicketId = "Ticket"
-            };
-        }
+            LoginName = "BisUser",
+            Password = "Password",
+            ClientNo = 2354,
+            TicketId = "Ticket"
+        };
     }
 }
-

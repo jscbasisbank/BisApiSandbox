@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text.Json;
-using System.Threading.Tasks;
-
-namespace BisSandboxApi.Web.Models.Responses;
+﻿namespace BisSandboxApi.Web.Models.Responses;
 
 public class ApiResponse
 {

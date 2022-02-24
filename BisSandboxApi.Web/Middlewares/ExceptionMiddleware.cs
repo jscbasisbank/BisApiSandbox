@@ -1,8 +1,4 @@
-﻿using System;
-using System.Net;
-using BisSandboxApi.Web.Models.Responses;
-
-namespace BisSandboxApi.Web.Middlewares;
+﻿namespace BisSandboxApi.Web.Middlewares;
 
 public class ExceptionMiddleware
 {

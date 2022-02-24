@@ -1,5 +1,4 @@
-﻿using System;
-namespace BisSandboxApi.Web.Constants;
+﻿namespace BisSandboxApi.Web.Constants;
 
 public static class BankCodes
 {

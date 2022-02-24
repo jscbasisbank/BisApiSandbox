@@ -1,8 +1,4 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-using System.Runtime.Serialization;
-
-namespace BisSandboxApi.Web.Models;
+﻿namespace BisSandboxApi.Web.Models;
 
 public class BaseRequest
 {

@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using BisSandboxApi.Web.Interfaces;
-using BisSandboxApi.Web.Models.Requests;
-using BisSandboxApi.Web.Models.Responses;
-using Microsoft.AspNetCore.Mvc;
-
-namespace BisSandboxApi.Web.Controllers;
+﻿namespace BisSandboxApi.Web.Controllers;
 
 [ApiController]
 [Route("api/[controller]/[action]")]

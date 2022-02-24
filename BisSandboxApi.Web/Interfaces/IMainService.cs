@@ -1,8 +1,4 @@
-﻿using System;
-using BisSandboxApi.Web.Models.Requests;
-using BisSandboxApi.Web.Models.Responses;
-
-namespace BisSandboxApi.Web.Interfaces;
+﻿namespace BisSandboxApi.Web.Interfaces;
 
 public interface IMainService
 {

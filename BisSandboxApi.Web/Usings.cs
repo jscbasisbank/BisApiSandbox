@@ -1,11 +1,16 @@
-﻿using System;
-namespace BisSandboxApi.Web
-{
-	public class Usings
-	{
-		public Usings()
-		{
-		}
-	}
-}
-
+﻿global using System;
+global using System.Reflection;
+global using BisSandboxApi.Web.Interfaces;
+global using BisSandboxApi.Web.Middlewares;
+global using BisSandboxApi.Web.Models;
+global using BisSandboxApi.Web.Services;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.OpenApi.Models;
+global using Swashbuckle.AspNetCore.Filters;
+global using System.Text.RegularExpressions;
+global using BisSandboxApi.Web.Constants;
+global using BisSandboxApi.Web.Models.Requests;
+global using BisSandboxApi.Web.Models.Responses;
+global using System.ComponentModel.DataAnnotations;
+global using System.Runtime.Serialization;
+global using System.Text.Json; 

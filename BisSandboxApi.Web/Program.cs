@@ -1,13 +1,4 @@
-﻿using System.Reflection;
-using BisSandboxApi.Web.Interfaces;
-using BisSandboxApi.Web.Middlewares;
-using BisSandboxApi.Web.Models;
-using BisSandboxApi.Web.Services;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.OpenApi.Models;
-using Swashbuckle.AspNetCore.Filters;
-
-var builder = WebApplication.CreateBuilder(args);
+﻿var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

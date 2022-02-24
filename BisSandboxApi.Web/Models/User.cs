@@ -1,5 +1,4 @@
-﻿using System;
-namespace BisSandboxApi.Web.Models;
+﻿namespace BisSandboxApi.Web.Models;
 
 public class User
 {

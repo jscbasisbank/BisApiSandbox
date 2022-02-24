@@ -1,12 +1,4 @@
-﻿using System;
-using System.Text.RegularExpressions;
-using BisSandboxApi.Web.Constants;
-using BisSandboxApi.Web.Interfaces;
-using BisSandboxApi.Web.Models;
-using BisSandboxApi.Web.Models.Requests;
-using BisSandboxApi.Web.Models.Responses;
-
-namespace BisSandboxApi.Web.Services;
+﻿namespace BisSandboxApi.Web.Services;
 
 public class MainService : IMainService
 {
